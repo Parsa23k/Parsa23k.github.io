@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parsa Keihan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Parsa Keihan</h1>
+            <img src="parsa.jpg" alt="Your Name">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('about')">About</a></li>
+                <li><a href="#" onclick="openCV()">Open CV</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about" style="display: none;">
+        <h2>About Me</h2>
+        <p>
+            Hello world! My name is Parsa Keihan.<br>
+            I'm a senior computer science student at <a style="color: black;" href="https://w3.bilkent.edu.tr/bilkent/" target="_blank">Bilkent University</a><br>
+            I am a hard working, honest individual. I am a good timekeeper, always willing to learn new skills. I am friendly, helpful and polite, have a good sense of humour. I am able to work independently in busy environments and also within a team setting.<br>
+            Contact me for more information.
+        </p>
+    </section>
+
+    <section id="portfolio" style="display: none;">
+        <h2>Portfolio</h2>
+        <div class="portfolio-item">
+            <img src="sample_image.jpg" alt="Project 1">
+            <h3>Project 1</h3>
+            <p>Description of Project 1.</p>
+        </div>
+        <!-- Add more portfolio items as needed -->
+    </section>
+
+    <section id="contact" style="display: none;">
+        <h2>Contact Me</h2>
+        <p>
+            Gmail: <a href="mailto:parsa23keyhan@gmail.com">parsa23keyhan@gmail.com</a><br>
+            Phone number: <a href="tel:+905383931380">+90 538 393 1380</a><br>
+            <a href="https://www.linkedin.com/in/parsakeihan/">Linkedin</a><br>
+            <a href="https://github.com/Parsa23k">GitHub</a><br>
+        </p>
+    </section>
+
+    <script>
+        function showSection(sectionId) {
+            // Get all section elements
+            const sections = document.querySelectorAll('section');
+            
+            // Hide all sections
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+
+            // Show the selected section
+            const selectedSection = document.getElementById(sectionId);
+            selectedSection.style.display = 'block';
+        }
+
+        function openCV() {
+            // Replace 'path/to/your/cv.pdf' with the actual path to your CV file
+            const cvPath = 'Parsa Keihan CV.pdf';
+
+            // Trigger the download
+            const link = document.createElement('a');
+            link.href = cvPath;
+            link.download = 'parsa_keihan_cv.pdf';
+            document.body.appendChild(link);
+            link.click();
+
+            // Show the alert
+            alert('You will now see the CV');
+        }
+    </script>
+</body>
+</html>
