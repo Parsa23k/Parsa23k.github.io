@@ -1,99 +1,285 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parsa Keihan</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parsa Keihan | Full-Stack Developer & Data Science</title>
+  <meta name="description" content="Parsa Keihan - Full-Stack Developer, Data Science Graduate Specialist, and Industrial & Systems Engineering M.E. student at Rutgers University.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <h1>Parsa Keihan</h1>
-            <img src="parsa.jpg" alt="Your Name">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#" onclick="showSection('about')">About</a></li>
-                <li><a href="#" onclick="downloadCV()">Download CV</a></li>
-                <li><a href="#" onclick="showSection('contact')">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <div class="bg-orb orb-a"></div>
+  <div class="bg-orb orb-b"></div>
 
-    <section id="about" style="display: none;">
-        <h2>About Me</h2>
+  <header class="site-header">
+    <a class="brand" href="#top">Parsa Keihan</a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#membership">Memberships</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle theme">Light Mode</button>
+      <a class="cv-button" href="Parsa Keihan CV.pdf" download>Download CV</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Full-Stack Developer | Data Science | Industrial Engineering</p>
+        <h1>Building practical products across software, analytics, and AI.</h1>
         <p>
-            Hello world! My name is Parsa Keihan.<br>
-            I'm a senior computer science student at <a style="color: black;" href="https://w3.bilkent.edu.tr/bilkent/" target="_blank">Bilkent University</a><br>
-            I am an enthusiastic, self-motivated, reliable, responsible and hard working person. I am a mature team worker and adaptable to all challenging situations. I am able to work well both in a team environment as well as using my own initiative.<br>
-            You may download my CV for extra information.<br><br>
-            Area of interest:<br>
-            -Algorithms & Programming<br>
-            -Computer Science Structures<br>
-            -OOP Software Development<br> 
-            -Database Systems<br>
-            -Computer Graphics<br>
-            -Bioinformatics<br>
-            -Data Science<br>
-            -Data Analytics<br>
-            -Business Analytics<br>
-            -Machine Learning<br>
-            -Deep Learning<br>
-            -UX-UI Design<br><br>
-            Contact me for more information.
+          I am Parsa Keihan, an Industrial & Systems Engineering M.E. student at Rutgers University and a Computer Science B.S.E.
+          graduate from Bilkent University. I work at the intersection of full-stack development, data analytics, and applied AI.
         </p>
-    </section>
-
-    <section id="portfolio" style="display: none;">
-        <h2>Portfolio</h2>
-        <div class="portfolio-item">
-            <img src="sample_image.jpg" alt="Project 1">
-            <h3>Project 1</h3>
-            <p>Description of Project 1.</p>
+        <div class="cta-row">
+          <a class="primary-cta" href="#projects">View Projects</a>
+          <a class="ghost-cta" href="mailto:parsa23keyhan@gmail.com">parsa23keyhan@gmail.com</a>
         </div>
-        <!-- Add more portfolio items as needed -->
+      </div>
+      <div class="hero-card">
+        <img src="parsa.jpg" alt="Portrait of Parsa Keihan">
+        <ul>
+          <li><strong>Current Degree:</strong> M.E. Industrial & Systems Engineering, Rutgers University</li>
+          <li><strong>Current Role:</strong> Full-Stack Developer at Octapull</li>
+          <li><strong>GPA:</strong> 3.83</li>
+        </ul>
+      </div>
     </section>
 
-    <section id="contact" style="display: none;">
-        <h2>Contact Me</h2>
-        <p>
-            Gmail: <a style="color: white;" href="mailto:parsa23keyhan@gmail.com" target="_blank">parsa23keyhan@gmail.com</a><br>
-            Phone number: <a style="color: white;" href="tel:+905383931380" target="_blank">+90 538 393 1380</a><br>
-            <a style="color: white;" href="https://www.linkedin.com/in/parsakeihan/" target="_blank">Linkedin</a><br>
-            <a style="color: white;" href="https://github.com/Parsa23k" target="_blank">GitHub</a><br>
-            <a style="color: white;" href="https://www.instagram.com/parsa_keihan/" target="_blank">Instagram</a><br>
-        </p>
+    <section id="about" class="panel">
+      <h2>About</h2>
+      <p>
+        My focus is turning complex requirements into scalable software and data-driven solutions. I have shipped products in
+        collaboration platforms, AI-powered testing workflows, logistics systems, and academic software projects. I also teach
+        and support data science learning through workshops and one-on-one consultations.
+      </p>
+      <div class="stats-grid">
+        <article>
+          <h3>Phone</h3>
+          <p>848-264-9444</p>
+        </article>
+        <article>
+          <h3>Email</h3>
+          <p>Rutgers + Personal</p>
+        </article>
+        <article>
+          <h3>GPA</h3>
+          <p>3.83</p>
+        </article>
+      </div>
     </section>
 
-    <script>
-        function showSection(sectionId) {
-            // Get all section elements
-            const sections = document.querySelectorAll('section');
-            
-            // Hide all sections
-            sections.forEach(section => {
-                section.style.display = 'none';
-            });
+    <section id="education" class="panel">
+      <h2>Education</h2>
+      <div class="timeline">
+        <article>
+          <header>
+            <h3>Rutgers University - Industrial & Systems Engineering, M.E.</h3>
+            <span>Jan 2025 - Aug 2026</span>
+          </header>
+          <p>
+            Coursework includes data analytics, decision making under uncertainty, planning and operations, supply chain,
+            quality management, production analysis, forecasting, and time series analysis.
+          </p>
+        </article>
+        <article>
+          <header>
+            <h3>Bilkent University - Computer Science, B.S.E. (60% Scholarship)</h3>
+            <span>Sep 2020 - Jan 2025</span>
+          </header>
+          <p>
+            Coursework includes Algorithms & Programming, Computer Science Structures, Digital Design, Computer Organization,
+            OOP Software Development, Database Systems, Operating Systems, Computer Graphics, and Bioinformatics.
+          </p>
+        </article>
+      </div>
+    </section>
 
-            // Show the selected section
-            const selectedSection = document.getElementById(sectionId);
-            selectedSection.style.display = 'block';
-        }
+    <section id="experience" class="panel">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <article>
+          <header>
+            <h3>Full-Stack Developer, Octapull</h3>
+            <span>Oct 2024 - Jan 2025</span>
+          </header>
+          <p>
+            Contributed to a global video conferencing and collaboration platform, supporting integration of video calls,
+            meetings, and interactive tools into an all-in-one solution.
+          </p>
+        </article>
 
-        function downloadCV() {
-            const cvPath = 'Parsa Keihan CV.pdf';
+        <article>
+          <header>
+            <h3>Data Science Graduate Specialist, Rutgers University</h3>
+            <span>Sep 2025 - Jan 2026</span>
+          </header>
+          <p>
+            Delivered workshops in Python, machine learning, and AI methods. Offered one-on-one consultations and virtual office
+            hours, and collaborated with the Data Librarian on instructional data science resources.
+          </p>
+        </article>
 
-            // Trigger the download
-            const link = document.createElement('a');
-            link.href = cvPath;
-            link.download = 'parsa_keihan_cv.pdf';
-            document.body.appendChild(link);
-            link.click();
+        <article>
+          <header>
+            <h3>Assistant General Manager of Advanced Data Analytics (Intern), SabanciDx</h3>
+            <span>Jul 2023 - Sep 2023</span>
+          </header>
+          <p>
+            Conducted market and competitor analysis, created bilingual AI automation test cases, trained GPT-4/Python-based
+            models, applied NLP and transformer approaches, and integrated AI-driven outputs into full-stack workflows.
+          </p>
+        </article>
 
-            // Show the alert
-            alert('CV downloaded');
-        }
-    </script>
+        <article>
+          <header>
+            <h3>Software Developer (Intern), Borusan Lojistik</h3>
+            <span>Jul 2022 - Aug 2022</span>
+          </header>
+          <p>
+            Enhanced transportation software, developed UI for multiple models, fixed user/system issues, built a reusable
+            e-commerce template, and worked with TypeScript, .NET, Angular, C#, and SQL in agile delivery cycles.
+          </p>
+        </article>
+
+        <article>
+          <header>
+            <h3>Web Developer (Intern), Legaling (Start-up)</h3>
+            <span>Nov 2021 - Feb 2022</span>
+          </header>
+          <p>
+            Implemented front-end features, handled post-launch maintenance, and updated backend SQL records with new bilingual
+            legal terms.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="panel">
+      <h2>Software Projects</h2>
+      <div class="projects-grid">
+        <article>
+          <h3>VendAR</h3>
+          <p>
+            Online shopping platform using augmented/hyper reality. Contributed to UML architecture, UI mockups,
+            full-stack development, and monthly expert reporting.
+          </p>
+          <a href="https://mfkucuk.github.io/vendar/#" target="_blank" rel="noreferrer">Live Demo</a>
+        </article>
+
+        <article>
+          <h3>BNBilkent</h3>
+          <p>
+            Room and flat rental platform with database-backed listings. Contributed to UML/UI design, frontend development,
+            modal features, and backend integration via Axios.
+          </p>
+          <a href="https://github.com/Parsa23k/BNBilkent" target="_blank" rel="noreferrer">GitHub Repo</a>
+        </article>
+
+        <article>
+          <h3>Bilasmus</h3>
+          <p>
+            Erasmus/exchange management platform for Bilkent. Worked on non-functional requirements, architecture diagrams,
+            behavioral diagrams, UI layer design, and debugging design artifacts.
+          </p>
+          <a href="https://github.com/Parsa23k/Bilasmus" target="_blank" rel="noreferrer">GitHub Repo</a>
+        </article>
+
+        <article>
+          <h3>Borusan Case (Individual Project)</h3>
+          <p>
+            E-commerce logistics case platform for item/user status management. Built with C#, MVC, DTO, JavaScript,
+            TypeScript, HTML, and CSS.
+          </p>
+          <a href="https://github.com/Parsa23k/BorusanCase" target="_blank" rel="noreferrer">GitHub Repo</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="panel">
+      <h2>Skills</h2>
+      <div class="tags">
+        <span>Java</span><span>Python</span><span>C++</span><span>C</span><span>C#</span><span>R</span><span>JavaScript</span>
+        <span>TypeScript</span><span>React</span><span>Vue.js</span><span>Angular</span><span>Django</span><span>Spring</span>
+        <span>ASP.NET Core</span><span>ASP.NET Web API</span><span>SQL</span><span>HTML</span><span>CSS</span><span>SCSS</span>
+        <span>Bootstrap</span><span>Postman</span><span>Git</span><span>GitHub</span><span>MVC</span><span>OOP</span>
+        <span>UML</span><span>Machine Learning</span><span>Prompt Engineering</span><span>Data Analytics</span><span>Big Data</span>
+        <span>Product Development</span><span>UI/UX Design</span>
+      </div>
+      <div class="mini-columns">
+        <article>
+          <h3>Languages</h3>
+          <p>Persian (Farsi): native proficiency, Turkish: native proficiency, English: native proficiency</p>
+        </article>
+        <article>
+          <h3>Tooling</h3>
+          <p>JetBrains, VS Code, Eclipse, Excel, Word, PowerPoint</p>
+        </article>
+        <article>
+          <h3>Core Strengths</h3>
+          <p>Full-stack development, database management, AI-assisted workflows, and technical communication.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="membership" class="panel">
+      <h2>Memberships</h2>
+      <div class="mini-columns">
+        <article>
+          <h3>IT Head, TedXBilkentUniversity Club</h3>
+          <p>Website implementation, Sep 2023 - Feb 2024</p>
+        </article>
+        <article>
+          <h3>Volunteer & Social Media Manager</h3>
+          <p>Social Awareness Projects (Education for the Visually Impaired), Jun 2021 - Jun 2024</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="panel contact-panel">
+      <h2>Contact</h2>
+      <p>Open to full-stack, data science, and analytics opportunities.</p>
+      <div class="contact-links">
+        <a href="mailto:parsa23keyhan@gmail.com">Personal Email</a>
+        <a href="mailto:parsa.keihan@rutgers.edu">Rutgers Email</a>
+        <a href="tel:+18482649444">Phone</a>
+        <a href="https://www.linkedin.com/in/parsakeihan/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://github.com/Parsa23k" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://parsa23k.github.io" target="_blank" rel="noreferrer">Website</a>
+      </div>
+      <p class="footnote">Based on the most recent CV in this repository.</p>
+    </section>
+  </main>
+
+  <script>
+    (function () {
+      const root = document.body;
+      const toggle = document.getElementById("themeToggle");
+      const stored = localStorage.getItem("theme");
+      const preferred = window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+      const initialTheme = stored || preferred;
+
+      function setTheme(theme) {
+        root.setAttribute("data-theme", theme);
+        toggle.textContent = theme === "dark" ? "Light Mode" : "Dark Mode";
+      }
+
+      setTheme(initialTheme);
+      toggle.addEventListener("click", function () {
+        const next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+        setTheme(next);
+        localStorage.setItem("theme", next);
+      });
+    })();
+  </script>
 </body>
 </html>
