@@ -321,6 +321,13 @@ body[data-theme="light"] .contact-links a {
   font-weight: 700;
 }
 
+.stats-grid p.emails-inline {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.4;
+  word-break: break-word;
+}
+
 .timeline {
   border-left: 2px solid rgba(77, 212, 172, 0.4);
   margin-left: 0.45rem;
@@ -411,6 +418,11 @@ body[data-theme="light"] .tags span {
   border: 1px solid var(--line);
   border-radius: 14px;
   padding: 0.95rem;
+}
+
+.mini-columns ul {
+  margin: 0;
+  padding-left: 1.1rem;
 }
 
 .references-grid {
